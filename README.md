@@ -20,6 +20,8 @@ mvn clean package
 # Run server: process 1
 java -jar ./target/evasion-1.0-SNAPSHOT.jar 9000 9001 100 10 127.0.0.1 8999
 # GUI: process 2
+# uncomment for crunchy
+# module load node-9.4.0
 node web.js 8999 8998
 
 # randomClient.py is a sample client
